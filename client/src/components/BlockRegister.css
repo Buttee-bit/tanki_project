@@ -1,0 +1,28 @@
+.BlockRegister{
+    margin-left: auto;
+    margin-right: auto;
+    width: 12em;
+    min-height: 10em;
+    vertical-align: middle;
+    display: table;
+    padding: 15%;
+  }
+  
+  .YandexImage{
+    background-size: contain;
+    max-width: 4em;
+    min-height: 4em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+  .LogoHeader{
+    max-width: 24px;
+    min-height: 24px;
+  }
+  
+  .GoogleImage{
+    background-size: contain;
+    max-width: 24px;
+    min-height: 24px;
+  }
