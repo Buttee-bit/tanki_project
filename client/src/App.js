@@ -1,18 +1,23 @@
 import './App.css';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
-import BlockRegister from './components/BlockRegister';
-import Header from './components/Header';
-import UserList from './components/UserList';
+import RegisterPage from './components/RegisterPage/RegisterPage';
+import LkPage from './components/LKabinetPage/LkPage';
+import StartPage from './components/StartPage/StartPage';
 
 function App() {
   return (
-    <div className='Page'>
-      <Header></Header>
+    <BrowserRouter>
+    <div className='app'>
 
-      <BlockRegister></BlockRegister>
-      
-      <UserList></UserList>
+          <Routes>
+            <Route path ='/registration' element = {<RegisterPage/>}/>
+            <Route path ='/lk' element = {<LkPage/>}/>
+            <Route path ='/startpage' element = {<StartPage/>}/>
+          </Routes>
+
     </div>
+    </BrowserRouter>
   );
 }
 

@@ -5,7 +5,7 @@ from .auth.schemas import UserRead, UserCreate
 
 
 app = FastAPI(
-    title="Trading App"
+    title="Tank API"
 )
 
 app.include_router(
