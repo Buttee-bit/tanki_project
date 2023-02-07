@@ -5,7 +5,7 @@ import RegisterPage from './components/RegisterPage/RegisterPage';
 import LkPage from './components/LKabinetPage/LkPage';
 import StartPage from './components/StartPage/StartPage';
 
-function App() {
+const App = ()=> {
   return (
     <BrowserRouter>
     <div className='app'>

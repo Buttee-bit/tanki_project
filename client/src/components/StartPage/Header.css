@@ -1,12 +1,12 @@
 .container{
-  margin: 0px 50px;
+  margin: 0px 125px;
 }
 
 .header_cont{
     background-image: url(1624892231_21-phonoteka_org-p-tank-tigr-oboi-krasivo-35.jpg);
     height: 100vh;
     background-size: cover;
-    opacity: 0.85;
+    opacity: 0.83;
   }
 
 .header_line{
@@ -21,6 +21,6 @@
   font-size: 14px;
 
   margin-right: 10%;
-  margin-left: 30%;
+  margin-left: 50%;
 
 }

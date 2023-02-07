@@ -1,10 +1,11 @@
 import React from "react";
 import Header from "./Header";
 
-function StartPage(){
+const StartPage = () =>{
+
     return (
         <Header/>
     )
 
 }
-export default StartPage;
+export default StartPage; 
