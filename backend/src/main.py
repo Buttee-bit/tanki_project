@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from .auth.base_config import  auth_backend, fastapi_users
 from .auth.schemas import UserRead, UserCreate
+from .tank_game.router import router as router_operation
 
 
 app = FastAPI(
@@ -41,4 +42,6 @@ app.include_router(
 @app.get('/api')
 async def get_api():
     print('Подключение к FASTAPI')
-    return {'message': 'Подключение к FASTAPI'}
+    return {'message': 'Подключение к FASTAPI'} 
+
+app.include_router(router_operation)
