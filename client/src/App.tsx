@@ -1,12 +1,9 @@
-import './App.css';
-
 import {Routes, Route} from 'react-router-dom';
 // 
 import Home from './components/home';
-import RegisterPage from './components/register';
-import Login from './components/login';
 import Personal_cabinet from './components/personal_cabinet';
 import Private_route from './utils/router/private_route';
+import AuthRootComponent from './components/auth';
 
 
 function App() {
@@ -18,8 +15,8 @@ function App() {
         </Route>
 
         <Route path ='/' element = {<Home/>}/>
-        <Route path ='/register' element = {<RegisterPage/>}/>
-        <Route path ='/login' element = {<Login/>}/>
+        <Route path ='/register' element = {<AuthRootComponent/>}/>
+        <Route path ='/login' element = {<AuthRootComponent/>}/>
       </Routes>
     </div>
   );
